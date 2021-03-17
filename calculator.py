@@ -16,17 +16,22 @@ from arithmetic import (add, subtract, multiply, divide, square, cube,
 
 #accept user input
 
-user_expression = input("Enter your equation!")
 
-while user_expression!="q" :
-    tokenized_input = user_expression.split(' ')
+while True:
+    user_expression = input("Enter your equation!")
+    if user_expression != "q":
+        tokenized_input = user_expression.split(' ')
+        num1 = int(tokenized_input[1])
+        if tokenized_input[2]:
+            num2 = int(tokenized_input[2])
 
-    if tokenized_input[0] == "+" :
-        result = add(int(tokenized_input[1]),int(tokenized_input[2]))
-    
+        if tokenized_input[0] == "+" :
+            result = add(num1,num2)
+        
+    elif user_expression =="q":
+        break
+            
     print (result)
-    break
-
     
 
 
