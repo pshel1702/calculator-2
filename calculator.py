@@ -21,8 +21,10 @@ while True:
     user_expression = input("Enter your equation!")
     if user_expression != "q":
         tokenized_input = user_expression.split(' ')
+    
 
         if tokenized_input[0] == "+" :
+            print (tokenized_input)
             result = add(tokenized_input)
 
         if tokenized_input[0] == "-" :
