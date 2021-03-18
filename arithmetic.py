@@ -1,14 +1,11 @@
 """Functions for common math operations."""
 
-def add(num):
+def add(num1, num2):
     """Return the sum of the two inputs."""
     # define a variable "sum"
     # set this variable as the sum of num1, num2. sum = num1+num2
     # return sum
-    sum = 0
-    for i in range (0,len(num)):
-        sum = sum + num[i]
-    return sum
+    return num1+num2
 
 def subtract(num):
     """Return the second number subtracted from the first."""

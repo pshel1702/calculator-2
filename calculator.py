@@ -1,4 +1,5 @@
 """CLI application for a prefix-notation calculator."""
+from functools import reduce
 
 from arithmetic import (add, subtract, multiply, divide, square, cube,
                         power, mod, add_cubes, add_mult)
@@ -38,7 +39,7 @@ while True:
         if split_list : 
 
             if tokenized_input[0] == "+" :
-                result = add(split_list)
+                result = reduce(add,split_list)
 
             elif tokenized_input[0] == "-" :
                 result = subtract(split_list)
