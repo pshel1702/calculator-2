@@ -7,15 +7,12 @@ def add(num1, num2):
     # return sum
     return num1+num2
 
-def subtract(num):
+def subtract(num,num2):
     """Return the second number subtracted from the first."""
     #def variable for subtract
     #set subtract variable to find difference between two numbers
     #return subtract variable
-    difference = num[0]
-    for i in range (1,len(num)):
-        difference = difference-num[i]
-    return difference
+    return num1-num2
 
 
 def multiply(num):

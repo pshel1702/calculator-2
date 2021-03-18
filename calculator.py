@@ -42,7 +42,7 @@ while True:
                 result = reduce(add,split_list)
 
             elif tokenized_input[0] == "-" :
-                result = subtract(split_list)
+                result = reduce(subtract,split_list)
 
             elif tokenized_input[0] == "*":
                 result = multiply(split_list)
